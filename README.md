@@ -1,4 +1,4 @@
-# Piece 프로젝트
+# Piece 프로젝트2
 
 <img src="./main.png">
 
