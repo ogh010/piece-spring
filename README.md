@@ -1,4 +1,4 @@
-# Piece 프로젝트 변경
+# Piece 프로젝트
 
 <img src="./main.png">
 
