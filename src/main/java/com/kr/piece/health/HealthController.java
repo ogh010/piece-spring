@@ -1,4 +1,4 @@
-package com.kr.piece.test;
+package com.kr.piece.health;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
