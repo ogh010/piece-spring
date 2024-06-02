@@ -12,7 +12,7 @@ public class HealthController {
 
     @GetMapping("/health")
     public String health() {
-        return "success2";
+        return "success";
     }
 
 }
