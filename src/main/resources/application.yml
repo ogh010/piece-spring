@@ -1,7 +1,7 @@
 server:
   port: 9101
   servlet:
-    context-path: /piece
+    context-path: /piece-spring
 
 spring:
   application:
