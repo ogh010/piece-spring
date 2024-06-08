@@ -12,6 +12,6 @@ services:
       - ACTIVE_PROFILE=${PROFILE}
     restart: unless-stopped
 
-volumes:
+networks:
   piece-network:
     external: true
