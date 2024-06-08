@@ -6,8 +6,6 @@ services:
     container_name: piece-spring
     ports:
       - "${PORT}:${PORT}"
-    networks:
-      - server_connection
     environment:
       - ACTIVE_PROFILE=${PROFILE}
     restart: unless-stopped
