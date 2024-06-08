@@ -1,11 +1,9 @@
 version: '3'
 
 services:
-  piece-spring:
+  piece-react:
     image: ${DOCKER_IMAGE_NAME}
-    container_name: piece-spring
+    container_name: piece-react
     ports:
       - "${PORT}:${PORT}"
-    environment:
-      - ACTIVE_PROFILE=${PROFILE}
     restart: unless-stopped
