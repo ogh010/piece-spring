@@ -8,10 +8,16 @@ services:
       - "${PORT}:${PORT}"
     networks:
       - piece-network
+    volumes:
+      - logs:/logs
     environment:
       - ACTIVE_PROFILE=${PROFILE}
     restart: unless-stopped
 
 networks:
   piece-network:
+    external: true
+
+volumes:
+  logs:
     external: true
