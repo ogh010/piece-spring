@@ -3,17 +3,11 @@ version: '3'
 services:
   formdang-sp-api:
     image: ${DOCKER_IMAGE_NAME}
-    container_name: formdang-sp-api
+    container_name: piece-spring
     ports:
       - "${PORT}:${PORT}"
     networks:
       - server_connection
-    volumes:
-      - /home/logs/formdang-spring-api:/logs
     environment:
       - ACTIVE_PROFILE=${PROFILE}
     restart: unless-stopped
-
-networks:
-  server_connection:
-    external: true
