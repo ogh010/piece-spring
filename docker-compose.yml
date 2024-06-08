@@ -6,4 +6,6 @@ services:
     container_name: piece-react
     ports:
       - "${PORT}:${PORT}"
+    environment:
+      - ACTIVE_PROFILE=${PROFILE}
     restart: unless-stopped
