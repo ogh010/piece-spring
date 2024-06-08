@@ -1,9 +1,9 @@
 version: '3'
 
 services:
-  piece-react:
+  piece-spring:
     image: ${DOCKER_IMAGE_NAME}
-    container_name: piece-react
+    container_name: piece-spring
     ports:
       - "${PORT}:${PORT}"
     environment:
