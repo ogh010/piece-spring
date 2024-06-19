@@ -6,6 +6,7 @@ services:
     container_name: ${DOCKER_CONTAINER_NAME}
     ports:
       - "${PORT}:${PORT}"
+      - "9201:9201"
     networks:
       - piece-network
     volumes:

@@ -10,5 +10,7 @@ COPY /${JAR_FILE_PATH} ROOT.jar
 
 EXPOSE 9101
 
-ENTRYPOINT ["java", "-jar", "-Xmx256m", "-Dspring.profiles.active=${ACTIVE_PROFILE}", "-Duser.timezone=Asia/Seoul", "ROOT.jar"]
+EXPOSE 9201
+
+ENTRYPOINT ["java", "-jar", "-Xmx256m", "-Dspring.profiles.active=${ACTIVE_PROFILE}", "-Duser.timezone=Asia/Seoul", "-Dcom.sun.management.jmxremote", "-Dcom.sun.management.jmxremote.port=9201", "-Dcom.sun.management.jmxremote.authenticate=false", "-Dcom.sun.management.jmxremote.ssl=false", "ROOT.jar"]
 
