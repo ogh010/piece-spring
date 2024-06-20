@@ -6,7 +6,7 @@ services:
     container_name: ${DOCKER_CONTAINER_NAME}
     ports:
       - "${PORT}:${PORT}"
-      - "9102:9102"
+      - "36010:36010"
     networks:
       - piece-network
       - zabbix-net
