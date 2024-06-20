@@ -9,6 +9,7 @@ services:
       - "9102:9102"
     networks:
       - piece-network
+      - zabbix-net
     volumes:
       - logs:/logs
     environment:
@@ -17,6 +18,8 @@ services:
 
 networks:
   piece-network:
+    external: true
+  zabbix-net:
     external: true
 
 volumes:
